@@ -173,7 +173,7 @@ contract SupplyChain is
         string memory _originFarmLatitude,
         string memory _originFarmLongitude,
         string memory _productNotes
-    ) public {
+    ) public onlyFarmer{
         // Add the new item as part of Harvest
         uint256 productID = _upc + sku;
         Item memory item = Item(
@@ -280,7 +280,7 @@ contract SupplyChain is
         // Call modifier to check if upc has passed previous supply chain stage
         sold(_upc)
         // Call modifier to verify caller of this function
-        verifyCaller(items[_upc].originFarmerID, msg.sender)
+        verifyCaller(items[_upc].distributorID, msg.sender)
     {
         // Update the appropriate fields
         items[_upc].itemState = State.Shipped;
@@ -379,6 +379,14 @@ contract SupplyChain is
         )
     {
         // Assign values to the 9 parameters
+        itemSKU = items[_upc].sku;
+        itemUPC = items[_upc].upc;
+        productID = items[_upc].productID;
+        productNotes = items[_upc].productNotes;
+        itemState = uint256(items[_upc].itemState);
+        distributorID = items[_upc].distributorID;
+        retailerID = items[_upc].retailerID;
+        consumerID = items[_upc].consumerID;
 
         return (
             itemSKU,
