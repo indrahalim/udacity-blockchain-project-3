@@ -1,112 +1,90 @@
-# Supply chain & data auditing
+
+# Ethereum Dapp for Tracking Items through Supply Chain
+---
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
-The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+## Submission Info
 
-![truffle test](images/ftc_farm_details.png)
+This project was finished and compiled using:
+* Truffle v5.4.33 (core: 5.4.33)
+* Ganache v7.0.1
+* Solidity 0.6.0 (solc-js)
+* Node v16.17.1
+* Web3.js v1.5.3
 
-![truffle test](images/ftc_product_details.png)
+## Installation
 
-![truffle test](images/ftc_transaction_history.png)
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
-
-```
-Give examples (to be clarified)
+Install truffle and ganache globally
+```bash
+npm install -g truffle@v5.4.33
+npm install -g ganache@v7.0.1
 ```
 
-### Installing
-
-> The starter code is written for **Solidity v0.4.24**. At the time of writing, the current Truffle v5 comes with Solidity v0.5 that requires function *mutability* and *visibility* to be specified (please refer to Solidity [documentation](https://docs.soliditylang.org/en/v0.5.0/050-breaking-changes.html) for more details). To use this starter code, please run `npm i -g truffle@4.1.14` to install Truffle v4 with Solidity v0.4.24. 
-
-A step by step series of examples that tell you have to get a development env running
-
-Clone this repository:
-
-```
-git clone https://github.com/udacity/nd1309/tree/master/course-5/project-6
+Install my-project with npm
+```bash
+  cd project-6
+  npm install
 ```
 
-Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
+## Running Tests
 
-```
-cd project-6
-npm install
-```
+To run tests, run the following command
 
-Launch Ganache:
+```bash
+  % truffle develop
+  Connected to existing Truffle Develop session at http://127.0.0.1:9545/
 
-```
-ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
-```
+  truffle(develop)> test
+  Using network 'develop'.
 
-Your terminal should look something like this:
 
-![truffle test](images/ganache-cli.png)
+  Compiling your contracts...
+  ===========================
+  > Everything is up to date, there is nothing to compile.
 
-In a separate terminal window, Compile smart contracts:
+  ganache-cli accounts used here...
+  Contract Owner: accounts[0]  0xd5e61ec6755889Dc7e3d183ea974cC7c9d32bb14
+  Farmer: accounts[1]  0xb1618A6b736a335Ab8596a1CE107403F9Dd2AaCb
+  Distributor: accounts[2]  0x1114f157e3086Ab3C2367Ff667be38A752a16Db9
+  Retailer: accounts[3]  0xaD434d9d22F5C8Fd6B27Cf462763b31Ef709fE45
+  Consumer: accounts[4]  0x967C871D84e54d902226791e586899aB0C6F244F
 
-```
-truffle compile
-```
 
-Your terminal should look something like this:
+    Contract: SupplyChain
+      ✓ Testing smart contract function harvestItem() that allows a farmer to harvest coffee (115ms)
+      ✓ Testing smart contract function processItem() that allows a farmer to process coffee (45ms)
+      ✓ Testing smart contract function packItem() that allows a farmer to pack coffee (49ms)
+      ✓ Testing smart contract function sellItem() that allows a farmer to sell coffee (50ms)
+      ✓ Testing smart contract function buyItem() that allows a distributor to buy coffee (64ms)
+      ✓ Testing smart contract function shipItem() that allows a distributor to ship coffee (60ms)
+      ✓ Testing smart contract function receiveItem() that allows a retailer to mark coffee received (56ms)
+      ✓ Testing smart contract function purchaseItem() that allows a consumer to purchase coffee (48ms)
+      ✓ Testing smart contract function fetchItemBufferOne() that allows anyone to fetch item details from blockchain (101ms)
+      ✓ Testing smart contract function fetchItemBufferTwo() that allows anyone to fetch item details from blockchain (89ms)
 
-![truffle test](images/truffle_compile.png)
 
-This will create the smart contract artifacts in folder ```build\contracts```.
+    10 passing (903ms)
 
-Migrate smart contracts to the locally running blockchain, ganache-cli:
+  - Fetching solc version list from solc-bin. Attempt #1
+  - Fetching solc version list from solc-bin. Attempt #1
 
-```
-truffle migrate
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/truffle_migrate.png)
-
-Test smart contracts:
-
-```
-truffle test
-```
-
-All 10 tests should pass.
-
-![truffle test](images/truffle_test.png)
-
-In a separate terminal window, launch the DApp:
-
-```
-npm run dev
+  truffle(develop)>
 ```
 
-## Built With
 
-* [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
-* [IPFS](https://ipfs.io/) - IPFS is the Distributed Web | A peer-to-peer hypermedia protocol
-to make the web faster, safer, and more open.
-* [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
+## Deployment
+
+Go to project-6 folder
+
+Create secret for deployment:
+1. create a new file named `.secret`
+2. paste your mnemonic into the newly created file
 
 
-## Authors
+Deploy to goerli network
+```bash
+  truffle migrate --reset --network goerli
+```
 
-See also the list of [contributors](https://github.com/your/project/contributors.md) who participated in this project.
-
-## Acknowledgments
-
-* Solidity
-* Ganache-cli
-* Truffle
-* IPFS
