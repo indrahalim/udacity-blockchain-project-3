@@ -1,0 +1,404 @@
+project-6 % truffle migrate --reset --network goerli
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'goerli'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0xc36d0b8322ed79347497ec6d932009069284f3b1fabc8f1da1a36986f47fa06c
+   ⠇ Blocks: 0            Seconds: 0undefined
+   ⠇ Blocks: 0            Seconds: 5undefined
+   ⠇ Blocks: 0            Seconds: 9undefined
+   ⠧ Blocks: 0            Seconds: 13undefined
+   ⠦ Blocks: 1            Seconds: 17undefined
+   ⠧ Blocks: 1            Seconds: 21undefined
+   ⠦ Blocks: 1            Seconds: 25undefined
+   ⠦ Blocks: 2            Seconds: 29undefined
+   ⠴ Blocks: 2            Seconds: 33undefined
+   ⠴ Blocks: 2            Seconds: 37undefined
+   ⠼ Blocks: 3            Seconds: 41undefined
+   ⠼ Blocks: 3            Seconds: 45undefined
+   ⠼ Blocks: 3            Seconds: 49undefined
+   ⠸ Blocks: 4            Seconds: 53undefined
+   ⠸ Blocks: 4            Seconds: 57undefined
+   ⠹ Blocks: 4            Seconds: 61undefined
+   ⠹ Blocks: 5            Seconds: 65undefined
+   ⠹ Blocks: 5            Seconds: 69undefined
+   ⠙ Blocks: 5            Seconds: 73undefined
+   > Blocks: 6            Seconds: 77
+   > contract address:    0xBAc596e2056a00be82Df21FA81821b7EE0Ee1588
+   > block number:        7816183
+   > block timestamp:     1666471008
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.099745432486412358
+   > gas used:            221323 (0x3608b)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00221323 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 7816184)
+   > confirmation number: 2 (block: 7816185)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00221323 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x0898d9fbde6c81cc05dd92d7b5f2c8ba49e85c929f267b3d066e3e0adea883e3
+   ⠋ Blocks: 0            Seconds: 0undefined
+   ⠏ Blocks: 1            Seconds: 5undefined
+   ⠏ Blocks: 1            Seconds: 9undefined
+   ⠏ Blocks: 1            Seconds: 13undefined
+   > Blocks: 2            Seconds: 17
+   > contract address:    0xCBf32b7deFDe270dd58b7d5956B8dE945101Fce5
+   > block number:        7816189
+   > block timestamp:     1666471104
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.096223272486412358
+   > gas used:            306456 (0x4ad18)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00306456 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 7816190)
+   > confirmation number: 2 (block: 7816191)
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x48a6cfa685e26ca6f18791be4a0f912fc7620e715c21f29c51776faeafac1c73
+   ⠙ Blocks: 0            Seconds: 0undefined
+   ⠙ Blocks: 1            Seconds: 6undefined
+   ⠋ Blocks: 1            Seconds: 10undefined
+   ⠋ Blocks: 1            Seconds: 14undefined
+   > Blocks: 2            Seconds: 18
+   > contract address:    0xB92935E1327F84E348BA9AB8BAa3c3ebb6200fC9
+   > block number:        7816194
+   > block timestamp:     1666471164
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.092935452486412358
+   > gas used:            328782 (0x5044e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328782 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 7816195)
+   > confirmation number: 2 (block: 7816196)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+   Deploying 'RetailerRole'
+   ------------------------
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x61e763a9a47b293eb35d49df3469abee42b966b802061f0d79e06d7b6eb24f28
+   ⠦ Blocks: 0            Seconds: 0Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠴ Blocks: 0            Seconds: 0undefined
+   ⠴ Blocks: 0            Seconds: 6undefined
+   ⠼ Blocks: 0            Seconds: 10undefined
+   ⠼ Blocks: 0            Seconds: 14undefined
+   ⠹ Blocks: 0            Seconds: 18Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠼ Blocks: 0            Seconds: 18undefined
+   ⠼ Blocks: 0            Seconds: 22undefined
+   ⠸ Blocks: 1            Seconds: 26undefined
+   ⠼ Blocks: 1            Seconds: 30Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠼ Blocks: 1            Seconds: 30undefined
+   ⠧ Blocks: 1            Seconds: 34Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠙ Blocks: 1            Seconds: 34Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠸ Blocks: 1            Seconds: 34undefined
+   ⠙ Blocks: 2            Seconds: 38Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠸ Blocks: 2            Seconds: 38undefined
+   ⠸ Blocks: 2            Seconds: 42undefined
+   ⠹ Blocks: 2            Seconds: 46undefined
+   > Blocks: 3            Seconds: 50
+   > contract address:    0x430f062F3eB743D797eD77ED955Ad3975Ce6cB83
+   > block number:        7816200
+   > block timestamp:     1666471248
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.089648352486412358
+   > gas used:            328710 (0x50406)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0032871 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 7816201)
+   > confirmation number: 2 (block: 7816202)
+
+   Deploying 'ConsumerRole'
+   ------------------------
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0xdd03a00c9488c028c8fed6c80d8e9e0cf4d6d8aaade56fbb5add536aca5266ae
+   ⠋ Blocks: 0            Seconds: 0Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠹ Blocks: 0            Seconds: 0undefined
+   ⠼ Blocks: 1            Seconds: 6undefined
+   ⠙ Blocks: 1            Seconds: 10undefined
+   ⠙ Blocks: 1            Seconds: 14undefined
+   ⠏ Blocks: 1            Seconds: 18Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠙ Blocks: 1            Seconds: 18undefined
+   ⠹ Blocks: 1            Seconds: 26undefined
+   ⠙ Blocks: 1            Seconds: 27Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠋ Blocks: 1            Seconds: 27undefined
+   ⠇ Blocks: 2            Seconds: 30Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   ⠹ Blocks: 2            Seconds: 30undefined
+   > Blocks: 2            Seconds: 34
+   > contract address:    0xee9A89382671B421c163A03126bA8D160fFf087A
+   > block number:        7816204
+   > block timestamp:     1666471308
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.086294352486412358
+   > gas used:            335400 (0x51e28)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.003354 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.call [as onreadystatechange] (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t.dispatchEvent (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+    at t._setReadyState (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._onHttpRequestError (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest.<anonymous> (/Users/core/LearnProjects/udacity-project-3-supply-chain/project-6/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:481:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+   > confirmation number: 1 (block: 7816205)
+   > confirmation number: 2 (block: 7816206)
+
+   Deploying 'SupplyChain'
+   -----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0xedc6429ef11b8d12b8dff1e526031b70fc96392ed1f6e6c7c468d921b50a25cf
+   ⠙ Blocks: 0            Seconds: 0undefined
+   ⠦ Blocks: 1            Seconds: 7undefined
+   ⠦ Blocks: 1            Seconds: 9undefined
+   ⠴ Blocks: 1            Seconds: 13undefined
+   > Blocks: 2            Seconds: 17
+   > contract address:    0x45cCE698C1901f944cD16623c80fFB0cABd98DD8
+   > block number:        7816208
+   > block timestamp:     1666471356
+   > account:             0xde554a4E56a15Aeb1d0C4b8a0122966B9360050f
+   > balance:             1.058426862486412358
+   > gas used:            2786749 (0x2a85bd)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02786749 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 7816209)
+   > confirmation number: 2 (block: 7816210)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04086097 ETH
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.0430742 ETH

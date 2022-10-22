@@ -8,6 +8,7 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 ## Submission Info
 
 This project was finished and compiled using:
+* Contract Address [0xbac596e2056a00be82df21fa81821b7ee0ee1588](https://goerli.etherscan.io/address/0xbac596e2056a00be82df21fa81821b7ee0ee1588)
 * Truffle v5.4.33 (core: 5.4.33)
 * Ganache v7.0.1
 * Solidity 0.6.0 (solc-js)

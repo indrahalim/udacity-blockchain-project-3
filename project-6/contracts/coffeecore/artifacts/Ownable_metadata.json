@@ -1,0 +1,132 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "TransferOwnership",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"constructor": "Assign the contract to an owner",
+				"isOwner()": {
+					"notice": "Check if the calling address is the owner of the contract"
+				},
+				"owner()": {
+					"notice": "Look up the address of the owner"
+				},
+				"renounceOwnership()": {
+					"notice": "Define a function to renounce ownerhip"
+				},
+				"transferOwnership(address)": {
+					"notice": "Define a public function to transfer ownership"
+				}
+			},
+			"notice": "Provides basic authorization control"
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"project-6/contracts/coffeecore/Ownable.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"project-6/contracts/coffeecore/Ownable.sol": {
+			"keccak256": "0x33f5350660029e7f89d8b447eaad0539975da652be73513a1d6219684f6a1516",
+			"urls": [
+				"bzz-raw://59eb03b26dc0c106633634ec9fa920905c7eb025dc88c78b20486b73aa7be8d8",
+				"dweb:/ipfs/QmX9fsR9wEamXvzJJn9xbEpBxiaBndjkXCS8JD5BgAuKex"
+			]
+		}
+	},
+	"version": 1
+}
