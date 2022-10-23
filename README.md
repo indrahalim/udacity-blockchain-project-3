@@ -4,38 +4,55 @@
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
+---
 
 ## Submission Info
 
-This project was finished and compiled using:
-* Contract Address [0xbac596e2056a00be82df21fa81821b7ee0ee1588](https://goerli.etherscan.io/address/0xbac596e2056a00be82df21fa81821b7ee0ee1588)
+Since rinkeby network is already deprecated, I deployed this project to goerli network.
+
+This project was finished using:
+* Goerli Contract Address [0xbac596e2056a00be82df21fa81821b7ee0ee1588](https://goerli.etherscan.io/address/0xbac596e2056a00be82df21fa81821b7ee0ee1588)
 * Truffle v5.4.33 (core: 5.4.33)
 * Ganache v7.0.1
-* Solidity 0.6.0 (solc-js)
+* Solidity 0.6.0 (solc-js) <-- bumped from 0.4.24 in the provided boilerplate
 * Node v16.17.1
 * Web3.js v1.5.3
 
-## Diagram
+## Write Up - UML
 
 ##### Activity Diagram
 ![activity diagram](images/activity_diagram.png)
 
----
 
 ##### Sequence Diagram
 ![sequence diagram](images/sequence_diagram.png)
 
----
 
 ##### State Diagram
 ![state diagram](images/state_diagram.png)
 
----
 
 ##### Class Diagram
 ![class diagram](images/class_diagram.png)
 
 ---
+
+## Write Up - Libraries
+There are some nodejs libraries used in this project:
+| Library                   | Version | Purpose |
+| ------------------------- | ------- | ------- |
+| truffle                   | 5.4.33  | development suite for smart contract |
+| truffle-hdwallet-provider | 1.0.17  | wallet used to deploy smart contract |
+| dotenv          | 16.0.3   | store mnemonic used for contract deployment |
+
+
+---
+
+## Write Up - IPFS
+I don't use IPFS for this project
+
+---
+
 ## Installation
 
 Install truffle and ganache globally
@@ -49,6 +66,8 @@ Install my-project with npm
   cd project-6
   npm install
 ```
+
+---
 
 ## Running Tests
 
@@ -95,6 +114,7 @@ To run tests, run the following command
   truffle(develop)>
 ```
 
+---
 
 ## Deployment
 
