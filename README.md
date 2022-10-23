@@ -12,6 +12,7 @@ Since rinkeby network is already deprecated, I deployed this project to goerli n
 
 This project was finished using:
 * Goerli Contract Address [0xbac596e2056a00be82df21fa81821b7ee0ee1588](https://goerli.etherscan.io/address/0xbac596e2056a00be82df21fa81821b7ee0ee1588)
+* Deployment Transaction ID [0x517684c72f7272a260fd8e3d6f2dc5799cb70c52a43d24b8a30ecdc2e403e8da](https://goerli.etherscan.io/tx/0x517684c72f7272a260fd8e3d6f2dc5799cb70c52a43d24b8a30ecdc2e403e8da)
 * Truffle v5.4.33 (core: 5.4.33)
 * Ganache v7.0.1
 * Solidity 0.6.0 (solc-js) <-- bumped from 0.4.24 in the provided boilerplate
