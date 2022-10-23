@@ -15,6 +15,27 @@ This project was finished and compiled using:
 * Node v16.17.1
 * Web3.js v1.5.3
 
+## Diagram
+
+##### Activity Diagram
+![activity diagram](images/activity_diagram.png)
+
+---
+
+##### Sequence Diagram
+![sequence diagram](images/sequence_diagram.png)
+
+---
+
+##### State Diagram
+![state diagram](images/state_diagram.png)
+
+---
+
+##### Class Diagram
+![class diagram](images/class_diagram.png)
+
+---
 ## Installation
 
 Install truffle and ganache globally
